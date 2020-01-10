@@ -1,0 +1,132 @@
+@charset "utf-8";
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: rgb(78, 102, 102);
+    background-image: url(../img/img0.jpg);
+    background-repeat:no-repeat;
+    background-size:cover;
+    background-position: center;  
+}
+code{
+    display: block;
+    background-color: rgb(116, 121, 121);
+}
+#flash-txt{
+    font-weight: bold;
+    color:white;
+}
+.console-box p{
+    color:white;
+    padding: 10px;
+}
+.console-box{
+    background-color: rgb(20, 22, 20);
+}
+.switch-on{
+    display: inline-block;
+    height:30px;
+    color: red;
+    font-size:30px;
+    font-weight: bold;
+    visibility: visible;
+}
+.switch-off{
+    display: inline-block;
+    height:30px;
+    visibility: hidden;
+}
+h1::before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1em;
+    content: '\f152';
+}
+li {
+    list-style: none;
+}
+
+ul {
+    padding-left: 1vw;
+}
+
+table {
+    border-collapse: collapse;
+}
+
+th, td {
+    border: solid 1px #ccc;
+}
+
+caption {
+    text-align: left;
+    visibility: hidden;
+    width: 0;
+    height: 0;
+}
+footer {
+    text-align: center;
+    margin: auto 0;
+    }
+.container {
+    padding: 0 1vw;
+    margin: 0 auto;
+}
+#col-1 {}
+
+#col-2 {}
+
+td:nth-of-type(1) {
+    text-align: center;
+}
+
+.hidden-mobile {
+    visibility: hidden;
+    width: 0;
+    height: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.icon{
+    font-family: 'Font Awesome 5 Brands';
+    font-weight: 900;
+    font-size: 6em
+}
+#icon-linux::before {
+    content: '\f17c';
+}
+
+#icon-tw::before {
+    content: '\f081';
+}
+#icon-github::before {
+    content: '\f09b';
+}
+
+@media screen and (min-width: 481px) {
+    aside{
+        padding-left:1vw;
+    }
+    #test {
+        color: blue;
+    }
+    .hidden-mobile {
+        visibility: visible;
+        width: 25vw;
+        height: 100vh;
+        margin: 0;
+        padding: 0;
+    }
+    .flex-box {
+        display: flex;
+    }
+    .flex-center {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 769px) {
+    #test {
+        color: green;
+    }
+}
