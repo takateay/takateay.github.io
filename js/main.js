@@ -18,4 +18,7 @@ $(function () {
   $(".click-list").click(function () {
     $(this).children(".hidden-list").toggle(50);
   });
+  $(".tw-open").click(function () {
+    $("#aside-space").toggle(50);
+  });
 });
