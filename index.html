@@ -16,9 +16,10 @@
     </header>
     <div class="container flex-box flex-center">
         <main>
-            <section id="descktop">
+            <section id="descktop-space">
+                <img id="descktop-icon" src="./img/vscodeicon.png" alt="">
             </section>
-            <article>
+            <article id="edit-space">
                 <div class="hidden-all">
                     <h1>TOP</h1>
                 </div>
@@ -26,41 +27,46 @@
                     <h1>kahatato Profile</h1>
                 </header>
                 <div class="container flex-box flex-left">
-                    <nav class="nav-col">
-                        <p>OPEN FILES</p>
-                        <ul>
-                            <li>WelcomeTo.java</li>
-                        </ul>
-                        <p>FOLDERS</p>
-                        <ul>
-                            <li class="click-list">HOME
-                                <ul class="hidden-list">
-                                    <li>RADEME.md</li>
-                                </ul>
-                            </li>                            
-                            <li class="click-list">About
-                                <ul class="hidden-list">
-                                    <li>Profile.md</li>
-                                </ul>
-                            </li>
-                            <li class="click-list">Skills
-                                <ul class="hidden-list">
-                                    <li>SkillImg.md</li>
-                                    <li>SkillList.md</li>
-                                </ul>
-                            </li>
-                            <li>Works</li>
-                            <li class="click-list">Contact
-                                <ul class="hidden-list">
-                                    <li>contact.exe</li>
-                                    <li>twitter.exe</li>
-                                </ul>
-                            </li>
-                        </ul>
-                    </nav>
-                    <section id="txt-area">
-                        <pre>
-<span id="editHead">WelomeTo.java</span><code>
+                    <div class="nav-col">
+                        <nav>
+                            <p>OPEN FILES</p>
+                            <ul>
+                                <li>WelcomeTo.java</li>
+                            </ul>
+                            <p>FOLDERS</p>
+                            <ul>
+                                <li class="click-list">HOME
+                                    <ul class="hidden-list">
+                                        <li>RADEME.md</li>
+                                    </ul>
+                                </li>
+                                <li class="click-list">About
+                                    <ul class="hidden-list">
+                                        <li>Profile.md</li>
+                                    </ul>
+                                </li>
+                                <li class="click-list">Skills
+                                    <ul class="hidden-list">
+                                        <li>SkillImg.md</li>
+                                        <li>SkillList.md</li>
+                                    </ul>
+                                </li>
+                                <li>Works</li>
+                                <li class="click-list">Contact
+                                    <ul class="hidden-list">
+                                        <li>contact.exe</li>
+                                        <li class="tw-open">twitter.exe</li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </nav>
+
+                    </div>
+                    <div id="txt-area">
+                        <section>
+                            <pre>
+<span id="editHead">WelomeTo.java</span>
+<code>
     <span class="java-color">import </span>java.io.*;
 
     <span class="java-color">public class </span>WelcomeTo {
@@ -68,9 +74,11 @@
             System.out.println("Welcome to Kahatato site!!");
         }
     }
-　</code>
-</pre>
-                    </section>
+
+</code>
+                                </pre>
+                        </section>
+                    </div>
                 </div>
                 <div id="console-head">
                     <ul class="flex-box">
@@ -87,7 +95,7 @@
                     <p class="hidden">C:\kahatato><span id="flash-txt">_</span></p>
                 </div>
             </article>
-            <article>
+            <article class="art-container">
                 <h1>HOME</h1>
                 <p>Welcome!</p>
                 <p>I'm kahatato.</p>
@@ -243,8 +251,8 @@
                 </div>
             </article>
         </main>
-        <aside>
-            <p>広告</p>
+        <aside id="aside-space">
+            <span class="tw-open"></span>
             <a class="twitter-timeline" data-theme="dark" data-chrome="noscrollbar noheader nofooter" height="70vh"
                 href="https://twitter.com/kahatato_tw?ref_src=twsrc%5Etfw">Tweets by kahatato_tw</a>
         </aside>
