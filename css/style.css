@@ -2,19 +2,17 @@
 body {
     position: relative;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: rgb(78, 102, 102);
+    background-color: rgb(53, 54, 54);
     background-image: url(../img/img0.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    background-position: center;
+    background-position: top center;
     width: 100%;
     height: 100vh;
 }
-
-#descktop {
-    display: none;
+#main-space{
+    width: 80%;
 }
-
 header {
     height: 2%;
     width: 100%;
@@ -28,31 +26,44 @@ header h1 {
     background-color: rgb(39, 37, 37);
     color: white;
 }
-
-.art-container {
+.scroll-spase{
     width: 100%;
-    height: 100px;
-    overflow-y: auto;
+    height: 100%;
+    overflow-x: hidden;
+    /* overflow-y: auto; */
+    /* IE,Edgeスクロールバー非表示 */
+    -ms-overflow-style: none;
+
+}
+.scroll-spase-sub{
+    width: 100%;
+    height: auto;
+    overflow-x: auto;
     /* IE,Edgeスクロールバー非表示 */
     -ms-overflow-style: none;
 }
 
 /* Chromeスクロールバー非表示 */
+.scroll-spase::-webkit-scrollbar {
+    display: none;
+}
 
 .art-container::-webkit-scrollbar {
     display: none;
 }
-
 #txt-area {
+    background-color: rgb(37, 36, 36);
+    width: 75%;
+}
+#txt-area code{
     overflow-x: auto;
     /* IE,Edgeスクロールバー非表示 */
     -ms-overflow-style: none;
-    background-color: rgb(37, 36, 36);
 }
 
 /* Chromeスクロールバー非表示 */
 
-#txt-area::-webkit-scrollbar {
+#txt-area code::-webkit-scrollbar {
     display: none;
 }
 
@@ -69,7 +80,9 @@ code {
     display: block;
     background-color: rgb(48, 49, 49);
 }
-
+#col-1{
+    color: red;
+}
 .java-color {
     color: darkorange;
 }
@@ -164,11 +177,14 @@ footer {
     text-align: center;
     margin: auto 0;
 }
-
+footer small{
+    color:rgb(66, 65, 65);
+}
 .container {
     padding: 0;
     margin: 0 auto;
     height: inherit;
+    width: 80%;
 }
 
 td:nth-of-type(1) {
@@ -186,7 +202,7 @@ td:nth-of-type(1) {
 .icon {
     font-family: 'Font Awesome 5 Brands';
     font-weight: 900;
-    font-size: 6em
+    font-size: 2em
 }
 
 #icon-linux::before {
@@ -209,40 +225,64 @@ td:nth-of-type(1) {
     margin: 0;
 }
 
-.nav-col {
+#edit-nav {
+    width: 25%;
     background-color: rgb(24, 23, 23);
     color: white;
 }
+.hidden-list li{
+    opacity: 0.5;
+}
 
+.hidden-list li:hover{
+    opacity: 1.0;
+}
+.click-list{
+    opacity: 0.5;
+}
+.click-list:hover{
+    opacity: 1.0;
+}
 .hidden {
     visibility: hidden;
 }
-#descktop-icon {
-    width: 50%;
-    height: auto;
-}
 #descktop-space {
+    display: none;
     position: absolute;
     z-index: 1;
-    display: block;
     top: 10px;
     left: 10px;
-    /* background-repeat: no-repeat;
-    background-size: cover;
-    background-position: left; */
-    /* width: 8%;
-    height: 10%; */
-    /* background-image: url(../img/vscodeicon.png); */
+    width: 10%;
+    height: 10%;
+}
+#descktop-icon {
+    display: none;
+    display: block;
+    background-image: url(../img/vscodeicon.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    margin-top:10px;
+    width: 100%;
+    height: 100%;
+}
+#icon-topup{
+
 }
 #edit-space {
+    display: none;
     position: absolute;
     z-index: 2;
+    width:100%;
+    height: 100%;
+    /* 中央寄せ */
+    left: 0;
+    right: 0;
+    margin:0 auto;
 }
 #aside-space {
     display: none;
     position: absolute;
     z-index: 3;
-    top: 10%;
     width:70%;
     /* 中央寄せ */
     left: 0;
@@ -264,11 +304,50 @@ td:nth-of-type(1) {
     right: 0;
     margin: auto;
 }
-
+.edit-open::before {
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1em;
+    content: '\f057';
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.twitter-timeline{
+    height:50%;
+}
+#top-btn{
+    text-align: center;
+    line-height: 15vw;
+    width:15vw;
+    height: 15vw;
+    position: fixed;
+    top:85vh;
+    left:80%;
+    background-color: rgba(10, 20, 63, 0.7);
+    border-radius: 50%;
+    opacity: 0.8;
+}
+#top-btn:hover{
+    opacity: 1.0;
+}
+#top-btn:before{
+    font-family: 'Font Awesome 5 Free';
+    font-weight: 900;
+    font-size: 1em;
+    content: '\f102';
+}
+.flex-box {
+    display: flex;
+    justify-content: space-around;
+}
+.flex-center {
+    justify-content: center;
+}
+.flex-left {
+    justify-content: start;
+}
 @media screen and (min-width: 481px) {
-    #test {
-        color: blue;
-    }
     .hidden-mobile {
         visibility: visible;
         width: 15%;
@@ -276,20 +355,23 @@ td:nth-of-type(1) {
         margin: 0;
         padding: 0;
     }
-    .flex-box {
-        display: flex;
-        justify-content: space-around;
+    #top-btn{
+        width: 60px;
+        height: 60px;
+        line-height: 60px;
+        left:75%;
     }
-    .flex-center {
-        justify-content: center;
-    }
-    .flex-left {
-        justify-content: start;
-    }
+
 }
 
 @media screen and (min-width: 769px) {
-    #test {
-        color: green;
+    #descktop-space {
+        display: block;
+    }
+    #descktop-icon span {
+        display: block;
+    }
+    #top-btn{
+        left:60%;
     }
 }
