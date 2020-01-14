@@ -345,8 +345,64 @@ td:nth-of-type(1) {
     display: flex;
     justify-content: space-around;
 }
+.flex-box-desctop {
+    margin:0 auto;
+    width:50%;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+}
+.flex-box-desctop label{
+    text-align: center;
+    width: 50%;
+    line-height: 30px;
+    color: darkgrey;
+    background-color: rgb(30, 19, 129);
+}
+.flex-box-desctop input{
+    width: 50%;
+
+}
+#contact-space {
+    background-color: #fff;
+}
 .flex-center {
     justify-content: center;
+}
+#contact-date {
+    width: 50%;
+    height: 30px;
+}
+#contact-name{
+    width: 50%;
+    height: 30px;
+}
+#contact-mail{
+    width: 50%;
+    height: 30px;
+}
+#contact-pw{
+    width: 50%;
+    height: 30px;
+}
+#contact-ms{
+    width: 50%;
+    height: 30px;
+}
+#contact-sb{
+    width: 50%;
+}
+.submit-style{
+    width: 20%;
+    margin:0 0 0 auto;
+}
+#contact-sb{
+    background-color: rgb(102, 146, 196,0.7);
+    border-radius: 25%;
+    box-shadow: 0em;
+}
+.flex-between{
+    justify-content: space-between;
 }
 .flex-left {
     justify-content: start;
@@ -365,6 +421,9 @@ td:nth-of-type(1) {
         line-height: 60px;
         left:75%;
     }
+    .flex-box-desctop {
+        flex-direction: row;
+    }    
 
 }
 
