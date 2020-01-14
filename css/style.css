@@ -9,9 +9,10 @@ body {
     background-position: top center;
     width: 100%;
     height: 100vh;
+    margin: 0 auto;
 }
 #main-space{
-    width: 80%;
+    width: 90%;
 }
 header {
     height: 2%;
@@ -42,7 +43,6 @@ header h1 {
     /* IE,Edgeスクロールバー非表示 */
     -ms-overflow-style: none;
 }
-
 /* Chromeスクロールバー非表示 */
 .scroll-spase::-webkit-scrollbar {
     display: none;
@@ -80,8 +80,12 @@ code {
     display: block;
     background-color: rgb(48, 49, 49);
 }
-#col-1{
-    color: red;
+th{
+    background-color: rgba(167, 161, 161,0.5);
+}
+/* 文字折り返さない */
+p,td,dd{
+    white-space:nowrap;
 }
 .java-color {
     color: darkorange;
