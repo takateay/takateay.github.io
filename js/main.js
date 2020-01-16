@@ -16,10 +16,20 @@ $(function () {
       pagetop.fadeOut();
     }
   });
+  $(window).scroll(function () {
+    if ($(this).scrollTop() > 1) {
+      // 上に戻るボタンを表示する
+      pagetop.fadeIn();
+    } else {
+      // 上に戻るボタンを非表示する
+      pagetop.fadeOut();
+    }
+  });
   // 上に戻るボタンをクリックした場合
   pagetop.click(function () {
     // トップに戻る
     $('.scroll-spase').animate({ scrollTop: 0 }, 500);
+    $('body,html').animate({ scrollTop: 0 }, 500);
     return false;
   });
   // フェードイン、フェードアウトを繰り返し
