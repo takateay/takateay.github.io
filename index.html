@@ -1,0 +1,296 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="./css/normalize.css">
+    <link rel="stylesheet" href="./font/lib/fontawesome-free-5.12.0-web/css/all.min.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>kahatato Profile</title>
+</head>
+
+<body>
+    <header>
+    </header>
+    <div class="container flex-box flex-center">
+        <main id="main-space">
+            <nav id="descktop-space">
+                <span id="descktop-icon"></span>
+            </nav>
+            <article id="edit-space">
+                <div class="hidden-all">
+                    <h1>TOP</h1>
+                </div>
+                <span class="edit-open"></span>
+                <header>
+                    <h1>kahatato Profile</h1>
+                </header>
+                <div class="flex-box flex-left">
+                    <nav id="edit-nav">
+                        <p>OPEN FILES</p>
+                        <ul>
+                            <li>WelcomeTo.java</li>
+                        </ul>
+                        <p>FOLDERS</p>
+                        <ul>
+                            <li class="click-list">HOME
+                                <ul class="hidden-list">
+                                    <li>RADEME.md</li>
+                                </ul>
+                            </li>
+                            <li class="click-list">About
+                                <ul class="hidden-list">
+                                    <li>Profile.md</li>
+                                </ul>
+                            </li>
+                            <li class="click-list">Skills
+                                <ul class="hidden-list">
+                                    <li>SkillImg.md</li>
+                                    <li>SkillList.md</li>
+                                </ul>
+                            </li>
+                            <li class="click-list">Works</li>
+                            <li class="click-list">Contact
+                                <ul class="hidden-list">
+                                    <li>contact.exe</li>
+                                    <li class="tw-open">twitter.exe</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </nav>
+                    <section id="txt-area">
+                        <span id="editHead">WelomeTo.java</span>
+                        <pre>
+<code>
+    <span class="java-color">import </span>java.io.*;
+
+    <span class="java-color">public class </span>WelcomeTo {
+        <span class="java-color">public static void </span>main(String args[]){
+            System.out.println("Welcome to Kahatato site!!");
+        }
+    }
+
+</code>
+                                </pre>
+                    </section>
+                </div>
+                <div id="console-head">
+                    <ul class="flex-box">
+                        <li>問題</li>
+                        <li>出力</li>
+                        <li>デバッグコンソール</li>
+                        <li>ターミナル</li>
+                        <li>1:cmd</li>
+                    </ul>
+                </div>
+                <div class="console-box">
+                    <p>C:\kahatato>java WelcomeTo<span id="flash-txt">_</span></p>
+                    <p class="hidden">Welcome to Kahatato site!!</p>
+                    <p class="hidden">C:\kahatato><span id="flash-txt">_</span></p>
+                </div>
+            </article>
+            <div class="scroll-spase">
+                <article>
+                    <h1>HOME</h1>
+                    <div class="scroll-spase-sub">
+                        <p>Welcome!</p>
+                        <p>I'm kahatato.</p>
+                        <p>I don't speak English.</p>
+                        <p>I can speak only Japanese.</p>
+                        <p>But I use English to program.</p>
+                        <p>By the way, this sentence uses Google Translation.</p>
+                        <p>I really can't do it.</p>
+                        <p>I'm sorry for such a greeting.</p>
+                        <p>I love development!</p>
+                        <p>I want to lighten the world!</p>
+                        <p>Thank you very much!</p>
+                    </div>
+                </article>
+                <article>
+                    <h1>About</h1>
+                    <div class="scroll-spase-sub">
+                        <dl>
+                            <dt>Name</dt>
+                            <dd>kahatato</dd>
+                            <dt>Age</dt>
+                            <dd>28</dd>
+                            <dt>Occupation</dt>
+                            <dd>SIer</dd>
+                            <dt>Qualifications</dt>
+                            <dd>自動車運転免許(MT)</dd>
+                            <dd>日本商工会議所主催簿記検定２級</dd>
+                            <dd>ITパスポート600点</dd>
+                            <dd>基本情報技術者試験合格</dd>
+                            <dd>応用情報技術者試験合格</dd>
+                            <dt>Marriage</dt>
+                            <dd>既婚</dd>
+                        </dl>
+                    </div>
+                </article>
+                <article>
+                    <h1>Skills</h1>
+                    <div class="scroll-spase-sub">
+                        <article>
+                            <table>
+                                <caption>経験表</caption>
+                                <colgroup span="1" class="col-1"></colgroup>
+                                <colgroup span="1" class="col-2"></colgroup>
+                                <thead>
+                                    <tr>
+                                        <th>対象</th>
+                                        <th>経験</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>OS</td>
+                                        <td>Windows10,Linux(Redhat,Ubuntu)</td>
+                                    </tr>
+                                    <tr>
+                                        <td>エディタ</td>
+                                        <td>VisualStudioCode,sakuraエディタ</td>
+                                    </tr>
+                                    <tr>
+                                        <td>統合開発環境</td>
+                                        <td>Eclipse</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ブラウザ</td>
+                                        <td>Edge,IE,Chrome</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ターミナル</td>
+                                        <td><span class="nowrap">Git-Bash,PowerShell,MS-DOS,Cygwin,Teratarm</span></td>
+                                    </tr>
+                                    <tr>
+                                        <td>バージョン管理</td>
+                                        <td>Git,SVN</td>
+                                    </tr>
+                                    <tr>
+                                        <td>プログラミング言語</td>
+                                        <td>Java,ECMAScript,C#,VB,PLSQL,VBA</td>
+                                    </tr>
+                                    <tr>
+                                        <td>その他言語</td>
+                                        <td>HTML,CSS,Markdown,SQL,ShellScript</td>
+                                    </tr>
+                                    <tr>
+                                        <td>言語フレームワーク</td>
+                                        <td>Spring,Struts,BootStrap</td>
+                                    </tr>
+                                    <tr>
+                                        <td>プロジェクト管理</td>
+                                        <td>Redmine</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Webサーバー</td>
+                                        <td>Tomcat</td>
+                                    </tr>
+                                    <tr>
+                                        <td><span class="nowrap">アプリケーション・サーバー</span></td>
+                                        <td>weblogic</td>
+                                    </tr>
+                                    <tr>
+                                        <td>データベース</td>
+                                        <td>Oracle,MySQL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ジョブスケジューラ</td>
+                                        <td>JP1,Senju</td>
+                                    </tr>
+                                    <tr>
+                                        <td>パッケージマネージャ</td>
+                                        <td>chocolatey,YUM,APT,NPM</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ビルドツール</td>
+                                        <td>Maven,Ant</td>
+                                    </tr>
+                                    <tr>
+                                        <td>CI</td>
+                                        <td>Jenkins</td>
+                                    </tr>
+                                    <tr>
+                                        <td>仮想環境</td>
+                                        <td>VMware,Docker,WSL</td>
+                                    </tr>
+                                    <tr>
+                                        <td>ファイル転送ソフト</td>
+                                        <td>FFFTP,CyberDack</td>
+                                    </tr>
+                                    <tr>
+                                        <td>表計算ソフト</td>
+                                        <td>Excel</td>
+                                    </tr>
+                                </tbody>
+                                <tfoot></tfoot>
+                            </table>
+                    </div>
+                </article>
+                <article>
+                    <h1>Works</h1>
+                    <div class="scroll-spase-sub">
+                        <dl>
+                            <dt>Now</dt>
+                            <dd>SE-Manual作成</dd>
+                            <dt>2020.04</dt>
+                            <dd>情報処理安全確保支援士試験受験</dd>
+                        </dl>
+                    </div>
+                </article>
+                <article id="contact-space">
+                    <h1>Contact</h1>
+                    <form action="" class="">
+                        <div class="flex-box-desctop">
+                            <label for="contact-date">Date</label>
+                            <input type="date" name="" id="contact-date">
+                        </div>
+                        <div class="flex-box-desctop">
+                            <label for="contact-name">Name</label>
+                            <input type="text" name="" id="contact-name" placeholder="江州居　太郎">
+                        </div>
+                        <div class="flex-box-desctop">
+                            <label for="contact-name">E-Mail</label>
+                            <input type="email" name="" id="contact-mail" placeholder="example@example.com">
+                        </div>
+                        <div class="flex-box-desctop">
+                            <label for="contact-pw">Password</label>
+                            <input type="password" name="" id="contact-pw">
+                        </div>
+                        <div class="flex-box-desctop">
+                            <label for="contact-ms">Message</label>
+                            <textarea name="" id="contact-ms" cols="40" rows="4" maxlength="20"
+                                placeholder="ご意見・ご感想をご記入ください"></textarea>
+                        </div>
+                        <div class="right-format">
+                            <input type="submit" value="送信" id="contact-sb" class="submit-style">
+                        </div>
+                    </form>
+                </article>
+                <section>
+                    <div class="flex-box flex-center">
+                        <div id="icon-github" class="icon"></div>
+                        <div id="icon-tw" class="icon"></div>
+                        <div id="icon-linux" class="icon"></div>
+                    </div>
+                </section>
+            </div>
+            <span id="top-btn"></span>
+        </main>
+        <aside id="aside-space">
+            <span class="tw-close"></span>
+            <a class="twitter-timeline" data-theme="dark" data-chrome="noscrollbar noheader nofooter" height="90vh"
+                href="https://twitter.com/kahatato_tw?ref_src=twsrc%5Etfw">Tweets by kahatato_tw</a>
+        </aside>
+    </div>
+    <footer>
+        <small>Copyright &copy; 2020 kahatato All Rights Reserved.</small>
+    </footer>
+    <script src="./js/lib/jquery-3.4.1.js"></script>
+    <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
