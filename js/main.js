@@ -89,7 +89,7 @@ function msg001() {
 function pdfChange(id) {
   const url = document.getElementById("pdf-select-001").value;
   var obj = document.getElementById(id);
-  obj.setAttribute('data', url);
+  obj.setAttribute('src', url);
   var clone = obj.cloneNode(true);
   obj.parentNode.replaceChild(clone, obj);
 };
