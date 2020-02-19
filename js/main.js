@@ -1,5 +1,17 @@
 $(function () {
-  // 変数宣言
+
+  // ローディング画面のdivを取得
+  var showloading = document.getElementById('loading-page');
+  // 画面本体のdivを取得
+  var contents = document.getElementById('all-contents');
+  // 読み込みが完了したら発動
+  window.addEventListener('load', function () {
+    // loadingのdivを非表示に
+    showloading.style.display = 'none';
+    // contentsのdivを表示
+    contents.classList.remove('dsnone');
+  });
+
   // TOPに戻るスクロール
   var pagetop = $('#top-btn');
 
@@ -64,13 +76,20 @@ $(function () {
     $("#edit-space").show(0);
   });
   // input dateに今日日付をセット
-    var today = new Date();
-    today.setDate(today.getDate());
-    var yyyy = today.getFullYear();
-    var mm = ("0"+(today.getMonth()+1)).slice(-2);
-    var dd = ("0"+today.getDate()).slice(-2);
-    document.getElementById("contact-date").value=yyyy+'-'+mm+'-'+dd;  
+  var today = new Date();
+  today.setDate(today.getDate());
+  var yyyy = today.getFullYear();
+  var mm = ("0" + (today.getMonth() + 1)).slice(-2);
+  var dd = ("0" + today.getDate()).slice(-2);
+  document.getElementById("contact-date").value = yyyy + '-' + mm + '-' + dd;
 });
 function msg001() {
   alert('ありがとうございます。');
+};
+function pdfChange(id) {
+  const url = document.getElementById("pdf-select-001").value;
+  var obj = document.getElementById(id);
+  obj.setAttribute('data', url);
+  var clone = obj.cloneNode(true);
+  obj.parentNode.replaceChild(clone, obj);
 };
