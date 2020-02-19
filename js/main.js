@@ -89,7 +89,9 @@ function msg001() {
 function pdfChange(id) {
   const url = document.getElementById("pdf-select-001").value;
   var obj = document.getElementById(id);
-  obj.setAttribute('src', url);
+  var setUrl = 'https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'&embedded=true';
+  // console.log(setUrl);
+  obj.setAttribute('src', setUrl);
   var clone = obj.cloneNode(true);
   obj.parentNode.replaceChild(clone, obj);
 };
