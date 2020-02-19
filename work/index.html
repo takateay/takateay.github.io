@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../css/style.css">
+    <title>情報処理安全確保支援士試験受験</title>
+</head>
+<body id="work-page">
+    <div class="container">
+        <main>
+            <h1>情報処理安全確保支援士試験午後</h1>
+            <div class="pdf-zoon container">
+                <object id="pdf-zoon" data="./pdf/2019r01a_sc_pm1_ans.pdf" type="application/pdf" width="100%" height="100%"></object>        
+            </div>
+                <div class="cp_ipselect cp_sl02">
+                    <select required id="pdf-select-001" onChange="pdfChange('pdf-zoon')">
+                        <option value="" hidden>選択してください</option>
+                        <option value="./pdf/2019r01a_sc_pm1_qs.pdf">令和元年度秋期午後１問題</option>
+                        <option value="./pdf/2019r01a_sc_pm1_ans.pdf">令和元年度秋期午後１解答</option>
+                        <option value="./pdf/2019r01a_sc_pm1_cmnt.pdf">令和元年度秋期午後１総評</option>
+                        <option value="./pdf/2019r01a_sc_pm2_qs.pdf">令和元年度秋期午後２問題</option>
+                        <option value="./pdf/2019r01a_sc_pm2_ans.pdf">令和元年度秋期午後２解答</option>
+                        <option value="./pdf/2019r01a_sc_pm2_cmnt.pdf">令和元年度秋期午後２総評</option>
+                    </select>
+                </div>    
+            <span class="back-link">
+                <a href="../index.html">TOPへ戻る</a>
+            </span>
+        </main>    
+    </div>
+    <script src="../js/main.js"></script>
+</body>
+</html>
