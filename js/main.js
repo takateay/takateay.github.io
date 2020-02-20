@@ -87,21 +87,34 @@ function msg001() {
   alert('ありがとうございます。');
 };
 function pdfChange() {
-  const url = document.getElementById("pdf-select-001").value;
-  pdfChange001(url);
-  pdfChange002(url);
-  pdfChange003(url);
-  pdfChange004(url);
+  var url = document.getElementById("pdf-select-001").value;
+  url = 'https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url;
+  pdfChange001(url+'_qs.pdf&embedded=true');
+  pdfChange002(url+'_qs.pdf&embedded=true');
+  pdfChange003(url+'_ans.pdf&embedded=true');
+  pdfChange004(url+'_cmnt.pdf&embedded=true');
 };
 function pdfChange001(url){
-  document.getElementById('pdf-zoon-001').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_qs.pdf&embedded=true');
+  var obj = document.getElementById('pdf-zoon-001');
+  obj.setAttribute('src',url);
+  cln(obj);
 };
 function pdfChange002(url){
-  document.getElementById('pdf-zoon-002').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_qs.pdf&embedded=true');
+  var obj = document.getElementById('pdf-zoon-002');
+  obj.setAttribute('src',url);
+  cln(obj);
 };
 function pdfChange003(url){
-  document.getElementById('pdf-zoon-003').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_ans.pdf&embedded=true');  
+  var obj = document.getElementById('pdf-zoon-003');
+  obj.setAttribute('src',url);  
+  cln(obj);
 };
 function pdfChange004(url){
-  document.getElementById('pdf-zoon-004').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_cmnt.pdf&embedded=true');
+  var obj = document.getElementById('pdf-zoon-004');
+  obj.setAttribute('src',url);
+  cln(obj);
+};
+function cln(obj){
+  var clone = obj.cloneNode(true);
+  obj.parentNode.replaceChild(clone, obj);
 };
