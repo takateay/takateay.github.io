@@ -210,7 +210,9 @@ footer small {
     width: 80%;
 }
 .pdf-zoon{
-    height: 80vh;
+    display: flex;
+    height: 50vh;
+    overflow-x: scroll;
 }
 .back-link{
     display: inline-block;

@@ -8,34 +8,35 @@
     <title>情報処理安全確保支援士試験受験</title>
 </head>
 <body id="work-page">
-    <div class="container">
-        <main>
-            <h1>情報処理安全確保支援士試験午後</h1>
-            <div class="pdf-zoon container">
-                <iframe id="pdf-zoon" src="" width="100%" height="100%"></iframe>        
-            </div>
-                <div class="cp_ipselect cp_sl02">
-                    <select required id="pdf-select-001" onChange="pdfChange('pdf-zoon')">
-                        <!-- <option value="./pdf/2019r01a_sc_pm1_qs.pdf">令和元年度秋期午後１問題</option>
-                        <option value="./pdf/2019r01a_sc_pm1_ans.pdf">令和元年度秋期午後１解答</option>
-                        <option value="./pdf/2019r01a_sc_pm1_cmnt.pdf">令和元年度秋期午後１総評</option>
-                        <option value="./pdf/2019r01a_sc_pm2_qs.pdf">令和元年度秋期午後２問題</option>
-                        <option value="./pdf/2019r01a_sc_pm2_ans.pdf">令和元年度秋期午後２解答</option>
-                        <option value="./pdf/2019r01a_sc_pm2_cmnt.pdf">令和元年度秋期午後２総評</option> -->
-                        <option value="" hidden>選択してください</option>
-                        <option value="2019h31_2/2019r01a_sc_pm1_qs.pdf">令和元年度秋期午後１問題</option>
-                        <option value="2019h31_2/2019r01a_sc_pm1_ans.pdf">令和元年度秋期午後１解答</option>
-                        <option value="2019h31_2/2019r01a_sc_pm1_cmnt.pdf">令和元年度秋期午後１総評</option>
-                        <option value="2019h31_2/2019r01a_sc_pm2_qs.pdf">令和元年度秋期午後２問題</option>
-                        <option value="2019h31_2/2019r01a_sc_pm2_ans.pdf">令和元年度秋期午後２解答</option>
-                        <option value="2019h31_2/2019r01a_sc_pm2_cmnt.pdf">令和元年度秋期午後２総評</option>
-                    </select>
-                </div>    
-            <span class="back-link">
-                <a href="../index.html">TOPへ戻る</a>
-            </span>
-        </main>    
-    </div>
+    <main class="container">
+        <div class="pdf-zoon">
+            <iframe id="pdf-zoon-001" src="" frameborder="0" width="600" height="400"></iframe>
+            <iframe id="pdf-zoon-002" src="" frameborder="0" width="600" height="400"></iframe>
+            <iframe id="pdf-zoon-003" src="" frameborder="0" width="600" height="400"></iframe>
+            <iframe id="pdf-zoon-004" src="" frameborder="0" width="600" height="400"></iframe>
+        </div>
+        <div class="cp_ipselect cp_sl02">
+            <select required id="pdf-select-001" onchange="pdfChange()">
+                <option value="" hidden>選択してください</option>
+                <option value="2019h31_2/2019r01a_sc_pm1">令和元年度秋期午後１</option>
+                <option value="2019h31_2/2019r01a_sc_pm2">令和元年度秋期午後２</option>
+                <option value="2019h31_1/2019h31h_sc_pm1">平成３１年度春期午後１</option>
+                <option value="2019h31_1/2019h31h_sc_pm2">平成３１年度春期午後２</option>
+                <option value="2018h30_2/2018h30a_sc_pm1">平成３０年度秋期午後１</option>
+                <option value="2018h30_2/2018h30a_sc_pm2">平成３０年度秋期午後２</option>
+                <option value="2018h30_1/2018h30h_sc_pm1">平成３０年度春期午後１</option>
+                <option value="2018h30_1/2018h30h_sc_pm2">平成３０年度春期午後２</option>
+                <option value="2017h29_2/2017h29a_sc_pm1">平成２９年度秋期午後１</option>
+                <option value="2017h29_2/2017h29a_sc_pm2">平成２９年度秋期午後２</option>
+                <option value="2017h29_1/2017h29h_sc_pm1">平成２９年度春期午後１</option>
+                <option value="2017h29_1/2017h29h_sc_pm2">平成２９年度春期午後２</option>
+            </select>
+        </div>    
+        <input type="button" value="表示" onclick="pdfChange()">
+        <span class="back-link">
+            <a href="../index.html">TOPへ戻る</a>
+        </span>
+    </main>    
     <script src="../js/main.js"></script>
 </body>
 </html>
