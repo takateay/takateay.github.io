@@ -86,12 +86,22 @@ $(function () {
 function msg001() {
   alert('ありがとうございます。');
 };
-function pdfChange(id) {
+function pdfChange() {
   const url = document.getElementById("pdf-select-001").value;
-  var obj = document.getElementById(id);
-  var setUrl = 'https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'&embedded=true';
-  // console.log(setUrl);
-  obj.setAttribute('src', setUrl);
-  var clone = obj.cloneNode(true);
-  obj.parentNode.replaceChild(clone, obj);
+  pdfChange001(url);
+  pdfChange002(url);
+  pdfChange003(url);
+  pdfChange004(url);
+};
+function pdfChange001(url){
+  document.getElementById('pdf-zoon-001').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_qs.pdf&embedded=true');
+};
+function pdfChange002(url){
+  document.getElementById('pdf-zoon-002').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_qs.pdf&embedded=true');
+};
+function pdfChange003(url){
+  document.getElementById('pdf-zoon-003').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_ans.pdf&embedded=true');  
+};
+function pdfChange004(url){
+  document.getElementById('pdf-zoon-004').setAttribute('src','https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url+'_cmnt.pdf&embedded=true');
 };
