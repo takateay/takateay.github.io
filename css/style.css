@@ -457,7 +457,7 @@ td:nth-of-type(1) {
     text-align    : center;      /* 文字位置   */
     cursor        : pointer;     /* カーソル   */
     padding       : 5px 10px;   /* 余白       */
-    background    : #99ccff;     /* 背景色     */
+    background    : #2a5075;     /* 背景色     */
     color         : #ffffff;     /* 文字色     */
     line-height   : 1em;         /* 1行の高さ  */
     transition    : .3s;         /* なめらか変化 */
@@ -467,7 +467,7 @@ td:nth-of-type(1) {
 .btn-001:hover{
     box-shadow    : none;        /* カーソル時の影消去 */
     color         :#99ccff;     /* 背景色     */
-    background    : #ffffff;     /* 文字色     */
+    background    : #2a5075;     /* 文字色     */
 }
 .right-style{
     text-align: right;
@@ -650,7 +650,7 @@ td:nth-of-type(1) {
 }
 #input-area{
     margin: 0 auto;
-    width: 50%;
+    width: 100%;
 }
 @media screen and (min-width: 481px) {
     .hidden-mobile {
@@ -664,6 +664,10 @@ td:nth-of-type(1) {
         flex-direction: row;
         width: 70%;
     }
+    #input-area{
+        margin: 0 auto;
+        width: 50%;
+    }    
 }
 
 @media screen and (min-width: 769px) {
