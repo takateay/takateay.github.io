@@ -16,7 +16,12 @@ body {
 
 #work-page{
     width: 100%;
-    height: auto;
+    height: 100vh;
+}
+.work-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 #main-space {
     width: 90%;
@@ -211,8 +216,9 @@ footer small {
 }
 .pdf-zoon{
     display: flex;
-    height: 50vh;
+    height: 400px;
     overflow-x: scroll;
+    margin-bottom: 5px;
 }
 .back-link{
     display: inline-block;
@@ -444,7 +450,28 @@ td:nth-of-type(1) {
 #contact-pw {}
 
 #contact-ms {}
-
+.btn-001{
+    display       : inline-block;
+    border-radius : 5%;          /* 角丸       */
+    font-size     : 10pt;        /* 文字サイズ */
+    text-align    : center;      /* 文字位置   */
+    cursor        : pointer;     /* カーソル   */
+    padding       : 5px 10px;   /* 余白       */
+    background    : #99ccff;     /* 背景色     */
+    color         : #ffffff;     /* 文字色     */
+    line-height   : 1em;         /* 1行の高さ  */
+    transition    : .3s;         /* なめらか変化 */
+    box-shadow    : 2px 2px 3px #666666;  /* 影の設定 */
+    border        : 2px solid #99ccff;    /* 枠の指定 */
+}
+.btn-001:hover{
+    box-shadow    : none;        /* カーソル時の影消去 */
+    color         :#99ccff;     /* 背景色     */
+    background    : #ffffff;     /* 文字色     */
+}
+.right-style{
+    text-align: right;
+}
 .submit-style {
     display: inline-block;
     /* 文字位置   */
@@ -568,8 +595,8 @@ td:nth-of-type(1) {
 /* リストボックス */
 .cp_ipselect {
 	overflow: hidden;
-	width: 90%;
-	margin: 2em auto;
+	width: 80%;
+	margin: 1em auto;
 	text-align: center;
 }
 .cp_ipselect select {
@@ -620,6 +647,10 @@ td:nth-of-type(1) {
 .cp_ipselect.cp_sl02 select {
 	padding: 8px 38px 8px 8px;
 	color: #666666;
+}
+#input-area{
+    margin: 0 auto;
+    width: 50%;
 }
 @media screen and (min-width: 481px) {
     .hidden-mobile {
