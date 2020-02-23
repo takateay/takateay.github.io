@@ -20,36 +20,54 @@
             <div class="cp_ipselect cp_sl02">
                 <select required id="pdf-select-002" onchange="pdfListChange()">
                     <option value="" hidden>選択してください</option>
+                    <option value="sg">情報セキュリティマネジメント</option>
+                    <option value="fe">基本情報技術者</option>
+                    <option value="ap">応用情報技術者</option>
                     <option value="sc">情報処理安全確保支援士</option>
-                    <option value="st">ITストラテジスト</option>
-                    <option value="sa">システムアーキテクト</option>
-                    <option value="pm">プロジェクトマネージャ</option>
                     <option value="nw">ネットワークスペシャリスト</option>
                     <option value="db">データベーススペシャリスト</option>
                     <option value="es">エンベデッドシステムスペシャリスト</option>
                     <option value="sm">ITサービスマネージャ</option>
+                    <option value="sa">システムアーキテクト</option>
+                    <option value="pm">プロジェクトマネージャ</option>
                     <option value="au">システム監査技術者</option>
-                    <option value="sg">情報セキュリティマネジメント</option>
-                    <option value="fe">基本情報技術者</option>
-                    <option value="ap">応用情報技術者</option>
+                    <option value="st">ITストラテジスト</option>
                 </select>
             </div>    
-            <label for="pdf-select-001">対象期間</label>
+            <label for="pdf-select-001">対象</label>
             <div class="cp_ipselect cp_sl02">
                 <select required id="pdf-select-001" onchange="pdfChange()">
                     <option value="" hidden>選択してください</option>
-                    <option value="2019h31_2/2019r01a_sc_pm1">令和元年度秋期午後１</option>
-                    <option value="2019h31_2/2019r01a_sc_pm2">令和元年度秋期午後２</option>
-                    <option value="2019h31_1/2019h31h_sc_pm1">平成３１年度春期午後１</option>
-                    <option value="2019h31_1/2019h31h_sc_pm2">平成３１年度春期午後２</option>
-                    <option value="2018h30_2/2018h30a_sc_pm1">平成３０年度秋期午後１</option>
-                    <option value="2018h30_2/2018h30a_sc_pm2">平成３０年度秋期午後２</option>
-                    <option value="2018h30_1/2018h30h_sc_pm1">平成３０年度春期午後１</option>
-                    <option value="2018h30_1/2018h30h_sc_pm2">平成３０年度春期午後２</option>
-                    <option value="2017h29_2/2017h29a_sc_pm1">平成２９年度秋期午後１</option>
-                    <option value="2017h29_2/2017h29a_sc_pm2">平成２９年度秋期午後２</option>
-                    <option value="2017h29_1/2017h29h_sc_pm1">平成２９年度春期午後１</option>
-                    <option value="2017h29_1/2017h29h_sc_pm2">平成２９年度春期午後２</option>
+                    <option class="notkoudo" value="2019h31_2/2019r01a_sc_pm1">令和元年度秋期午後</option>
+                    <option class="notkoudo" value="2019h31_1/2019h31h_sc_pm1">平成３１年度春期午後</option>
+                    <option class="notkoudo" value="2018h30_2/2018h30a_sc_pm1">平成３０年度秋期午後</option>
+                    <option class="notkoudo" value="2018h30_1/2018h30h_sc_pm1">平成３０年度春期午後</option>
+                    <option class="notkoudo" value="2017h29_2/2017h29a_sc_pm1">平成２９年度秋期午後</option>
+                    <option class="notkoudo" value="2017h29_1/2017h29h_sc_pm1">平成２９年度春期午後</option>
+                    <option class="notkoudo" value="2016h28_2/2016h28a_sc_pm1">平成２８年度秋期午後</option>
+                    <option class="notkoudo" value="2016h28_1/2016h28h_sc_pm1">平成２８年度春期午後</option>
+                    <option class="notkoudo" value="2015h27_2/2015h27a_sc_pm1">平成２７年度秋期午後</option>
+                    <option class="notkoudo" value="2015h27_1/2015h27h_sc_pm1">平成２７年度春期午後</option>
+                    <option class="koudo-aki" value="2019h31_2/2019r01a_sc_pm1">令和元年度秋期午後１</option>
+                    <option class="koudo-aki" value="2019h31_2/2019r01a_sc_pm2">令和元年度秋期午後２</option>
+                    <option class="koudo-haru" value="2019h31_1/2019h31h_sc_pm1">平成３１年度春期午後１</option>
+                    <option class="koudo-haru" value="2019h31_1/2019h31h_sc_pm2">平成３１年度春期午後２</option>
+                    <option class="koudo-aki" value="2018h30_2/2018h30a_sc_pm1">平成３０年度秋期午後１</option>
+                    <option class="koudo-aki" value="2018h30_2/2018h30a_sc_pm2">平成３０年度秋期午後２</option>
+                    <option class="koudo-haru" value="2018h30_1/2018h30h_sc_pm1">平成３０年度春期午後１</option>
+                    <option class="koudo-haru" value="2018h30_1/2018h30h_sc_pm2">平成３０年度春期午後２</option>
+                    <option class="koudo-aki" value="2017h29_2/2017h29a_sc_pm1">平成２９年度秋期午後１</option>
+                    <option class="koudo-aki" value="2017h29_2/2017h29a_sc_pm2">平成２９年度秋期午後２</option>
+                    <option class="koudo-haru" value="2017h29_1/2017h29h_sc_pm1">平成２９年度春期午後１</option>
+                    <option class="koudo-haru" value="2017h29_1/2017h29h_sc_pm2">平成２９年度春期午後２</option>
+                    <option class="koudo-aki" value="2016h28_2/2016h28a_sc_pm1">平成２８年度秋期午後１</option>
+                    <option class="koudo-aki" value="2016h28_2/2016h28a_sc_pm2">平成２８年度秋期午後２</option>
+                    <option class="koudo-haru" value="2016h28_1/2016h28h_sc_pm1">平成２８年度春期午後１</option>
+                    <option class="koudo-haru" value="2016h28_1/2016h28h_sc_pm2">平成２８年度春期午後２</option>
+                    <option class="koudo-aki" value="2015h27_2/2015h27a_sc_pm1">平成２７年度秋期午後１</option>
+                    <option class="koudo-aki" value="2015h27_2/2015h27a_sc_pm2">平成２７年度秋期午後２</option>
+                    <option class="koudo-haru" value="2015h27_1/2015h27h_sc_pm1">平成２７年度春期午後１</option>
+                    <option class="koudo-haru" value="2015h27_1/2015h27h_sc_pm2">平成２７年度春期午後２</option>
                 </select>
             </div>    
             <div class="right-style">
@@ -61,5 +79,6 @@
         </span>
     </main>    
     <script src="../js/main.js"></script>
+    <script src="../js/work.js"></script>
 </body>
 </html>
