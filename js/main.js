@@ -88,11 +88,21 @@ function msg001() {
 };
 function pdfChange() {
   var url = document.getElementById("pdf-select-001").value;
-  url = 'https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url;
-  pdfChange001(url+'_qs.pdf&embedded=true');
-  pdfChange002(url+'_qs.pdf&embedded=true');
-  pdfChange003(url+'_ans.pdf&embedded=true');
-  pdfChange004(url+'_cmnt.pdf&embedded=true');
+  var division = document.getElementById("pdf-select-002").value;
+  if (url !== "" && division !== ""){
+
+    url = 'https://docs.google.com/viewer?url=https://www.jitec.ipa.go.jp/1_04hanni_sukiru/mondai_kaitou_'+url.replace('_sc_','_'+division+'_');
+
+    if (division == 'ap' || division == 'fe' || division == 'sg'){
+      url = url.replace('_pm1','_pm');
+    }
+
+    pdfChange001(url+'_qs.pdf&embedded=true');
+    pdfChange002(url+'_qs.pdf&embedded=true');
+    pdfChange003(url+'_ans.pdf&embedded=true');
+    pdfChange004(url+'_cmnt.pdf&embedded=true');  
+
+  }
 };
 function pdfChange001(url){
   var obj = document.getElementById('pdf-zoon-001');
@@ -117,4 +127,7 @@ function pdfChange004(url){
 function cln(obj){
   var clone = obj.cloneNode(true);
   obj.parentNode.replaceChild(clone, obj);
+};
+function pdfListChange(){
+
 };
